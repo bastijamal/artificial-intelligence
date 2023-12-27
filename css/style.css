@@ -1,0 +1,285 @@
+@import url(./reset.css);
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 30px;
+    background-color: #010a18;
+
+}
+
+header .introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #838487;
+}
+
+.introduction .intro-left {
+    display: flex;
+    align-items: center;
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.introduction .links {
+    display: none;
+    gap: 15px;
+}
+
+section {
+    color: #696b72;
+
+    .esas-sol {
+        h6 {
+            font-size: 18px;
+            padding-top: 30px;
+        }
+
+        h1 {
+            font-style: unset;
+            font-size: 38px;
+        }
+
+        h5 {
+            font-size: 22px;
+            padding-top: 10px;
+            color: #696b72;
+        }
+    }
+}
+
+
+.esas-sag img {
+    width: 350px;
+}
+
+
+section.buttons {
+    display: flex;
+    gap: 80px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+section.partnyorlar {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+/*.section img:first child,second child,nth-child(2)*/
+
+
+.apply-ai {
+    /* ashagdaki  setir mirta ayirmaq uchun yazilmishdir */
+    border-top: 1px solid #222;
+
+    .apply-sol img {
+        width: 300px;
+
+    }
+
+    .apply-sag h1 {
+        font-size: 35px;
+        padding-top: 40px;
+    }
+
+    .apply-sag h6 {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        color: #696b72;
+    }
+}
+
+.cards {
+    background-color: #0f1624;
+    margin: 50px 8px;
+    box-shadow: 7px 10px 50px rgb(164, 166, 168);
+    padding: 18px;
+}
+
+.awards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    h2 {
+        font-size: 23px;
+        color: rgb(164, 166, 168);
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.uch-noqte img {
+    width: 80px;
+    padding-left: 120px;
+}
+
+.sondan-bir-evvel {
+    .son-evvel-sol h1 {
+        font-size: 45px;
+        color: rgb(134, 138, 141);
+        width: 350px;
+        padding-bottom: 10px;
+    }
+
+    .son-evvel-sol p {
+        font-size: 25px;
+        width: 340px;
+    }
+
+    .son-evvel-sag img {
+        width: 350px;
+        padding-top: 20px;
+    }
+}
+
+
+
+@media(min-width:768px) {
+    header {
+        .introduction .links {
+            display: flex;
+        }
+
+        .introduction .fa-bars {
+            display: none;
+        }
+    }
+
+    section {
+
+        .esas-sag img {
+            width: 400px;
+        }
+
+        .esas-hisse1 {
+            display: flex;
+        }
+
+        .esas-sol h5 {
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .esas-sol h1 {
+            font-size: 46px;
+        }
+
+        .esas-sol h6 {
+            padding-top: 40px;
+        }
+    }
+
+    section.buttons {
+        padding-top: 20px;
+    }
+
+    .apply-ai {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    .uch-noqte img {
+        padding-left: 330px;
+    }
+
+    .sondan-bir-evvel {
+        display: flex;
+
+        .son-evvel-sag img {
+            width: 390px;
+            height: 500px;
+        }
+    }
+}
+
+
+
+@media(min-width:1280px) {
+    section {
+        .esas-hisse1 {
+            .esas-sol h5 {
+                width: 750px;
+                font-size: 45px;
+                font-style: italic;
+            }
+        }
+
+        .esas-sol h1 {
+            font-size: 50px;
+            padding-bottom: 9px;
+        }
+
+        .esas-sol h6 {
+            padding-top: 50px;
+            padding-bottom: 6px;
+        }
+    }
+
+    section.buttons {
+        padding-top: 0px;
+    }
+
+    section.partnyorlar {
+        display: flex;
+        padding: 50px 100px;
+        gap: 200px;
+    }
+
+    .apply-ai {
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+
+
+        .apply-sol img {
+            width: 400px;
+        }
+
+        .apply-sag {
+            h1 {
+                font-size: 50px;
+            }
+
+            h6 {
+                font-size: 40px;
+            }
+
+        }
+    }
+
+    .uch-noqte img{
+        width: 120px;
+        padding-left: 580px;
+    }
+
+    .sondan-bir-evvel{
+        display: flex;
+        justify-content: space-between;
+        .son-evvel-sol{
+            h1{
+                font-size: 60px;
+                width: 800px;
+            }
+    p{
+        font-size: 40px;
+        width: 700px;
+    }
+        }
+        .son-evvel-sag img{
+            width: 490px;
+            height: 550px;
+        }
+    }
+}
